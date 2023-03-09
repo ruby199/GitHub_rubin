@@ -17,7 +17,7 @@ class Solution:
         # take the remaining elements in nums2 and fill the rest
         while n > 0:
             nums1[last] = nums2[n-1]
-            n, last = m - 1, last - 1
+            n, last = n - 1, last - 1
         
         print(nums1)
 
