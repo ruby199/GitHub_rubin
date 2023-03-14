@@ -6,19 +6,21 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    def mergeTrees(root1, root2):
+
+    def mergeTrees(self.root1, self.root2):
         # if they are both empty return null
-        if not root1 and not root2:
+        if not self.root1 and not self.root2:
             return None
 
         # if null value, we should fill it with 0
-        v1 = root1.val if root1 else 0
-        v2 = root2.val if root2 else 0
+        v1 = self.root1.val if self.root1 else 0
+        v2 = self.root2.val if self.root2 else 0
 
         # create new tree object (merged tree)
         root = TreeNode(v1+v2)
 
-        root.left = self.mergeTrees(root1.left if root1 else None, root2.left if root2 else None)
-        root.right = self.mergeTrees(root1.right if root1 else None, root2.right if root2 else None)
+        # Merge both tree
+        root.left = self.mergeTrees(self.root1.left if self.root1 else None, self.root2.left if self.root2 else None)
+        root.right = self.mergeTrees(self.root1.right if self.root1 else None, self.root2.right if self.root2 else None)
 
         return root
