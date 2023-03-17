@@ -17,7 +17,7 @@ class Solution:
             if curr.val == val:
                 prev.next = nxt # skip the curr if it's value, no need to update prev
             else:
-                pre = curr 
+                prev = curr 
 
             curr = nxt # go on...
 
