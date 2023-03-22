@@ -112,3 +112,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+EASY/remove_element
+EASY/remove_the_element.py
