@@ -6,6 +6,6 @@ public:
             output ^= i;
         }
         return output;
-    })
+    };
 
 };
