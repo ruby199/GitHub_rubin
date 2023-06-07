@@ -1,6 +1,6 @@
 class TrieNode:
     def __init__(self):
-        self.children = {}
+        self.children = {} # children["a"] = TrieNode()
         self.endOfWord = False
 
 class Trie:
@@ -13,10 +13,10 @@ class Trie:
         for c in word:
             if c not in cur.children:
                 cur.children[c] = TrieNode()  # Instantiate TrieNode
-            cur = cur.children[c]
+            cur = cur.children[c] # Last character of the word
         
         # Mark end of word
-        cur.endOfWord = True
+        cur.endOfWord = True # if it is not a word - our function will return false
 
     def search(self, word: str) -> bool:
         cur = self.root

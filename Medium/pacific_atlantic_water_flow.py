@@ -13,6 +13,7 @@ class Solution:
             dfs(r, c - 1, visit, heights[r][c]) 
 
 
+
         for c in range(COLS):
             dfs(0, c, pac, heights[0][c])
             dfs(ROWS - 1, c, atl, heights[ROWS - 1][c])
