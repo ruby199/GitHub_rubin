@@ -20,33 +20,44 @@ Write a solution in O(long(m*n)) time complexity.
 
 
 
+from typing import List
 
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        # Get the number of rows and columns in the matrix
         ROWS, COLS = len(matrix), len(matrix[0])
         
         top, bot = 0, ROWS - 1
 
-        while top >= bot:
+        # Perform binary search on rows to narrow down the potential row
+        while top <= bot:
             row = (top + bot) // 2
+            
             if target > matrix[row][-1]:
-                top = row + 1
+                top = row + 1  # Target might be in the rows below the middle row
             elif target < matrix[row][0]:
-                bot = row - 1
+                bot = row - 1  # Target might be in the rows above the middle row
             else:
-                break 
+                break  # Target is within the range of the middle row, exit the loop
         
+        # Check if the top pointer exceeds the bottom pointer, indicating no potential row
         if not (top <= bot):
             return False
-        row = (top +bot) // 2
+        
+        # Calculate the final row where the target might be located
+        row = (top + bot) // 2
+        
         l, r = 0, COLS - 1
+        
+        # Perform binary search on columns to find the target within the chosen row
         while l <= r:
             m = (l + r) // 2
+            
             if target > matrix[row][m]:
-                l = m + 1
-            elif target > matrix[row][m]:
-                r = m - 1
+                l = m + 1  # Target might be in the columns to the right of the middle column
+            elif target < matrix[row][m]:
+                r = m - 1  # Target might be in the columns to the left of the middle column
             else:
-                return True
-
-        return False
+                return True  # Target found, exit the function and return True
+        
+        return False  
