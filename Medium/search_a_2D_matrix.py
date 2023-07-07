@@ -40,12 +40,13 @@ class Solution:
             return False
         row = (top +bot) // 2
         l, r = 0, COLS - 1
-        while 1 <= r:
+        while l <= r:
             m = (l + r) // 2
-            if target > matric[row][m]:
+            if target > matrix[row][m]:
                 l = m + 1
             elif target > matrix[row][m]:
                 r = m - 1
             else:
                 return True
+
         return False
