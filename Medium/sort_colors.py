@@ -22,4 +22,4 @@ class Solution:
             i += 1
         
         
-            
+# Note: The loop ends when i surpasses r. At that point, all the 0s are to the left of l, all the 2s are to the right of r, and all the 1s are between l and r.
