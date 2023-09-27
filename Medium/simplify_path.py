@@ -8,9 +8,9 @@ class Solution:
                 if cur == "..":
                     if stack: # if the stack is non-empty
                         stack.pop()
-                    elif cur != "" and cur != ".":
-                        stack.append(cur) # take the current file and update our stack
-                    cur = "" # reset our current
+                elif cur != "" and cur != ".":
+                    stack.append(cur) # take the current file and update our stack
+                cur = "" # reset our current
 
             else:
                 cur += c
