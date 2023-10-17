@@ -12,7 +12,7 @@ class Solution:
                     a = 0
                 else:
                     a = 0
-                    atack.pop()
+                    stack.pop()
             if a:
                 stack.append(a)
         
