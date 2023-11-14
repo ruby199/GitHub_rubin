@@ -9,6 +9,7 @@ class TimeMap:
         
 
     def set(self, key: str, value: str, timestamp: int) -> None:
+        # O(1)
         if key not in self.store:
             self.store[key] = []
         self.store[key].append([value, timestamp])
@@ -27,6 +28,9 @@ class TimeMap:
             else:
                 r = m - 1
         return res
+            
+
+
 
 # TimeMap object will be instantiated and called as such:
 # obj = TimeMap()
