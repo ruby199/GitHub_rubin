@@ -1,3 +1,2 @@
-  prev1 = temp
-        
-        return prev2
+        print(nums)
+        print(nums2)
