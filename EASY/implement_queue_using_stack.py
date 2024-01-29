@@ -28,15 +28,15 @@ class MyQueue_basic: # simple queue class
 
 class MyQueue: # queue class using only two stacks
     """
-    Time complexity:
-    Enqueue (push): O(n)O(n)O(n)
-    Dequeue (pop): O(1)O(1)O(1)
-    Peek (peek): O(1)O(1)O(1)
-    Empty Check (empty): O(1)O(1)O(1)
-    (where n is the number of elements in the queue.)
-
-    Space complexity:
-    O(n)O(n)O(n)
+        Time complexity:
+        Enqueue (push): O(n)
+        Dequeue (pop): O(1
+        Peek (peek): O(1)
+        Empty Check (empty): O(1)
+        (where n is the number of elements in the queue.)
+    
+        Space complexity:
+        O(n)
     """
 
     def __init__(self):
