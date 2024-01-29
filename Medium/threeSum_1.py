@@ -3,7 +3,7 @@
 problem link: https://leetcode.com/problems/two-sum/description/
 
 [ThreeSum]
-problem link: https://leetcode.com/problems/3sum/description/
+problem link: 
 """
 
 def twoSum(nums, target):
@@ -20,7 +20,7 @@ def twoSum(nums, target):
 print(twoSum([2, 4, 9, 6, 5], 10))
 
 
-def threeSum(nums, target):
+def threeSum(nums):
     # sorts the array and use two pointer approach
     nums.sort()
     answer = []
