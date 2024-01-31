@@ -1,2 +1,2 @@
-        print(nums)
-        print(nums2)
+            substring = s[l: end]
+            substring = substring[::-1]
