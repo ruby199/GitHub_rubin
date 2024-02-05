@@ -3,7 +3,7 @@ Problem Link: https://leetcode.com/problems/largest-number/description/
 
 Sol1. Apply the Key Function (lambda x: x*3)
 - The key function is applied to each element in the list to create a new list (not actually created though) where each number is repeated 3 times  (e.g., '9' becomes '999')
-- This solution does not handle all of the test cases (Note: constraints " 0 <= nums[i] <= 109")
+- This solution does not handle all of the test cases (Note: constraints " 0 <= nums[i] <= 10^9")
 
     Time complexity: O(n log n)
     Space complexity: O(n)
@@ -14,7 +14,7 @@ Sol2. Use Bubble sort based on the concatenation of the pairs of numbers in stri
     Time complexity: O(n^2) because of the bubble sort
     Space complexity: O(n)
 
-Sol2. Define a custom comparison function compare that dictates the sorting order based on the concatenation of pairs of numbers in string format. - This is the most practical solution.
+Sol3. Define a custom comparison function compare that dictates the sorting order based on the concatenation of pairs of numbers in string format. - This is the most practical solution.
 
     Time complexity: O(n log n)
     Space complexity: O(n) 
