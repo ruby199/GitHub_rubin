@@ -4,23 +4,24 @@ Problem Link: https://leetcode.com/problems/rearrange-array-elements-by-sign/des
 
 Description:
 
-You are given a 0-indexed integer array nums of even length consisting of an equal number of positive and negative integers.
-You should rearrange the elements of nums such that the modified array follows the given conditions:
+    You are given a 0-indexed integer array nums of even length consisting of an equal number of positive and negative integers.
+    You should rearrange the elements of nums such that the modified array follows the given conditions:
 
-[1] Every consecutive pair of integers have opposite signs. e.g., pos -> neg -> pos
-[2] For all integers with the same sign, the order in which they were present in nums is preserved. e.g., if pos1, pos2 -> the order remains same as pos1, pos2
-[3] The rearranged array begins with a positive integer. 
-[4] Return the modified array after rearranging the elements to satisfy the aforementioned conditions.
+    [1] Every consecutive pair of integers have opposite signs. e.g., pos -> neg -> pos
+    [2] For all integers with the same sign, the order in which they were present in nums is preserved. e.g., if pos1, pos2 -> the order remains same as pos1, pos2
+    [3] The rearranged array begins with a positive integer. 
+    [4] Return the modified array after rearranging the elements to satisfy the aforementioned conditions.
 
 Key Takeaways for rearrangeArray_1:
 
-[1] sort the array where the order among similar sign integers is preserved -> stable sorting for pos and neg separately
-    * [DEF] stable sorting: if two elements have the same key, the one that appeared earlier in the input will also appear in the sorted output. 
-[2] We should alternate the elements by sign starting with pos num.
+    [1] sort the array where the order among similar sign integers is preserved -> stable sorting for pos and neg separately
+        * [DEF] stable sorting: if two elements have the same key, the one that appeared earlier in the input will also appear in the sorted output. 
+    [2] We should alternate the elements by sign starting with pos num.
 
 Key Takeaways for rearrangeArray_2:
-[1] Use two pointers to track even and odd indices
-[2] Iteratively fill the new array ans which has the same size as num
+
+    [1] Use two pointers to track even and odd indices
+    [2] Iteratively fill the new array ans which has the same size as num
 
 Both solution have the same time & space complexity:
     Time Complexity: O(n)
