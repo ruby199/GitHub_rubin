@@ -5,9 +5,6 @@ Problem Link: https://leetcode.com/problems/product-of-array-except-self/descrip
 Prefix sum algorithm is mainly used for range query and the complexity of prefix sum algorithm is O(n).
 
 
-Correct Approach for this problem: 
-- Left: 
-- Right: 
 - Time Complexity(as the problem required): O(n)
 
 """
