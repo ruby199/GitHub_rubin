@@ -17,6 +17,8 @@ Key insight:
 Time Complexity: O(n)
 Only n-1 comparison is needed.
 
+Space Complexity: O(1)
+
 
 """
 
