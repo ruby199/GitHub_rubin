@@ -1,3 +1,2 @@
-
-            # print(nums[:i])
-            # print(nums[i+1:])
+                        left += 1
+                        right -= 1
