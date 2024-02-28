@@ -7,7 +7,8 @@ Backtracking(Brute Force Sol):
 
 Depth-First Search(DFS)
 
-Referece: 
+Reference:
+ 
 https://www.geeksforgeeks.org/introduction-to-backtracking-data-structure-and-algorithm-tutorials/
 
 """
