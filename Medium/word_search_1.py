@@ -25,10 +25,15 @@ class Solution:
 
             # Check the invalid cases
             if (r < 0 or c <0 or r >= ROWS or c >= COLS or word[i] != board[r][c] or (r,c) in path):
+                print("r, c, path:", r, c, path)
                 return False
 
             # Add the current cell to the path
             path.add((r,c))
+
+            print("cur path: ", path)
+            print("i:", i)
+            print("letter: ", word[i])
 
             # Recursively explore all adjacent directions
             res = (dfs(r + 1, c, i + 1, path) or 
@@ -51,3 +56,15 @@ class Solution:
 
         # If the word cannot be found, return False
         return False
+
+sol = Solution()
+
+
+board = 	[["A","B","C","E"],
+["S","F","C","S"],
+["A","D","E","E"]]
+
+
+word = "SEE"
+
+sol.exist(board, word)
