@@ -1,6 +1,7 @@
 """
 Problem Link: https://leetcode.com/problems/divisor-game/submissions/1209622630/
 
+Divisor Game
 """
 
 
