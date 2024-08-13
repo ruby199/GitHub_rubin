@@ -8,6 +8,7 @@ We can think about it as the sum of all elements, minux a subarray in the middle
 
 [DEF]"Kadane's algorithm": 
 - a dynamic programming technique used to find the max subarray within a given array of numbers.
+
 """
 
 class Solution:
